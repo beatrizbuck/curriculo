@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0px;
+    margin: 50px;
+    background: #eaf7ff;
+    text-align: justify;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    overflow: auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+/* Colunas para computador */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.col-1 { width: 8.33%; }
+.col-2 { width: 20%; }
+.col-3 { width: 25%; }
+.col-4 { width: 33.33%; }
+.col-5 { width: 41.66%; }
+.col-6 { width: 50%; }
+.col-7 { width: 58.33%; }
+.col-8 { width: 66.66%; }
+.col-9 { width: 75%; }
+.col-10 { width: 80%; }
+.col-11 { width: 91.66%; }
+.col-12 { width: 100%; }
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.cabecalho {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cabecalho h1, h2 {
+    padding: 0px;
+    margin: 0px;
+}
+
+.cabecalho img {
+    width: 200px;
+}
+
+ul, li {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.exp ul li h3 {
+    text-align: left;
+}
+
+.exp ul li h4 {
+    margin-top: 0;
+}
+
+.conteudo {
+    display: flex;
+    align-items: center;
+}
+
+.conteudo h3 {
+    text-align: center;
+    margin: 0;
+}
+
+.circle-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-image img {
+    width: 100%;
+    height: auto;
+}
+
+#cabecalho {
+    background-color: #e8f5e9;
+}
+
+#sobre {
+    background-color: #d0e8d5;
+}
+
+#resumo {
+    background-color: #b8dbc1;
+}
+
+#education {
+    background-color: #a6d6b4;
+}
+
+#cursos {
+    background-color: #a1cfaf;
+}
+
+#projetos {
+    background-color: #8ac29e;
+}
+
+#contato {
+    background-color: #74b58d;
+    text-decoration: none;
+}
+
+/* Colunas para celulares */
+@media only screen and (max-width: 768px) {
+    body {
+        padding: 0px;
+        margin: 0;
+        background: #eaf7ff;
+        font-family: "Montserrat", sans-serif;
+    }
+
+    
+    [class*="col-"] {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .col-2 {
+        width: 50%;
+        margin: auto;
+    }
+}
